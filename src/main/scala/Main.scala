@@ -3,7 +3,7 @@ import impl.OtherImpl
 
 package object virtual {
   implicit object otherLike extends OtherImpl
-  implicit val other = Other("From Main")
+  implicit val other = Other("Main: ")
 }
 
 object Main extends App with BindToImpl {
