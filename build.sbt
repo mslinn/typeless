@@ -23,7 +23,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-//  "org.scalatest"           %% "scalatest"     % "2.2.3" % "test" withSources()
+  "org.scalatest"  %% "scalatest" % "2.2.6" % "test" withSources()
 )
 
 logLevel := Level.Warn

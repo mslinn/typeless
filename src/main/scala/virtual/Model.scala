@@ -10,8 +10,8 @@ trait BlargFeature1Like {
   def jump(): String
 }
 
-case class Other(c: String)(implicit other: OtherLike) extends OtherLike {
-  def doSomething() = other.doSomething()
+case class Other(msg: String)(implicit other: OtherLike) extends OtherLike {
+  def doSomething() = msg + " " + other.doSomething()
 }
 
 trait OtherLike {
